@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
 // 1. Настройки базы данных
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseUrl = "https://orkfmagdpscmonjwxqkw.supabase.co"
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ya2ZtYWdkcHNjbW9uand4cWt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNzg1NzAsImV4cCI6MjA4MDg1NDU3MH0.evvxjAA0Ixw04bc0iqkh75g7Q7FQLFjpszP0TfP6XOc"
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default function HabitTracker() {
